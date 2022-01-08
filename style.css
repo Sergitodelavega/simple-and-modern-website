@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+body{
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    font-family: "Raleway", sans-serif;
+}
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .logo a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #555454;
+    margin-right: 10px;
+    transition: color 0.5s, text-decoration 0.5s;
+}
+
+nav .onglets a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+header{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+  -webkit-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+  -moz-box-shadow: -4px 6px 29px -11px rgba(166, 166, 166, 0.75);
+}
+
+header h3{
+    margin-top: -10px;
+}
+
+header button{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header button:hover{
+    background-color: rgb(218, 218, 218);
+    color: #000 ;
+}
+
+.cartes{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartes .carte{
+    max-width: 600px;
+    border: 3px solid #000;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.cartes .carte h1{
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+.cartes .carte a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .right{
+    display: flex;
+}
+
+footer .right p{
+    margin-top: 0px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:640px) {
+    nav .logo{
+        margin-bottom: 10px;
+    }
+
+    header{
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    footer .left{
+        margin-bottom: 10px;
+    }
+}
+
